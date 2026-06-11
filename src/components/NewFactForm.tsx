@@ -1,5 +1,6 @@
 import type { RefObject } from 'react';
 import { useState } from 'react';
+import { CATEGORIES } from '../constants';
 
 interface NewFactFormProps {
     inputRef: RefObject<HTMLInputElement | null>;
@@ -65,6 +66,11 @@ export default function NewFactForm({ inputRef }: NewFactFormProps) {
                     })}
                 >
                     <option value=''>escolha a categoria</option>
+                    {CATEGORIES.map(category => (
+                        <option
+                            value={category.value} key={category.value}
+                        >{category.label}</option>
+                    ))}
                 </select>
                 <button type='submit'>compartilhar</button>
             </form>
