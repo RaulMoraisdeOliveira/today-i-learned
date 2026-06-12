@@ -7,7 +7,7 @@ import NewFactForm from "./components/NewFactForm";
 
 const INITIAL_FACTS: Fact[] = [{
     id: 1,
-    text: 'React foi criado pelo Facenook e lançado em maio de 2013.',
+    text: 'React foi criado pelo Facebook e lançado em maio de 2013.',
     source: 'https://react.dev',
     category: 'technology',
     votes_interesting: 21,

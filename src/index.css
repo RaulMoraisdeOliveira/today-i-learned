@@ -1,1 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght,MONO@200..800,1&display=swap');
+
 @import 'tailwindcss';
+
+* {
+    font-family: 'Coiny', sans-serif;
+    text-transform: uppercase;
+}
+
+p, a, select, option, input::placeholder, form span {
+    font-family: 'Sono', sans-serif;
+    text-transform: none;
+}
+
+@utility btn-show {
+    @apply pt-4 px-8 pb-4.25 h-14.25 rounded-full transition duration-300 hover:scale-110 hover:-rotate-2 cursor-pointer ease-in-out
+}
