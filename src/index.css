@@ -4,7 +4,6 @@
 
 * {
     font-family: 'Coiny', sans-serif;
-    text-transform: uppercase;
 }
 
 p, a, select, option, input::placeholder, form span {
@@ -12,6 +11,6 @@ p, a, select, option, input::placeholder, form span {
     text-transform: none;
 }
 
-@utility btn-show {
-    @apply pt-4 px-8 pb-4.25 h-14.25 rounded-full transition duration-300 hover:scale-110 hover:-rotate-2 cursor-pointer ease-in-out
+@utility btn {
+    @apply uppercase leading-none rounded-full transition-transform duration-300 ease-in-out hover:scale-110 hover:-rotate-2 cursor-pointer 
 }

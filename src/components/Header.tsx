@@ -18,7 +18,7 @@ export default function Header(
                 </div>
                 <button
                     onClick={onToggleForm}
-                    className="bg-linear-[135deg,#3b82f6,#ef4444,#16a34a,#eab308] text-[20px] btn-show"
+                    className="h-14.25 bg-linear-[135deg,#3b82f6,#ef4444,#16a34a,#eab308] text-[20px] pt-5 px-8 pb-4.25 btn"
                 >
                     { showForm ? 'fechar' : 'compartilhar um fato' }
                 </button>

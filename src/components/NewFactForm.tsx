@@ -36,7 +36,10 @@ export default function NewFactForm({ inputRef }: NewFactFormProps) {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form
+                onSubmit={handleSubmit}
+                className="mb-10 bg-stone-700 px-8 py-4 rounded-2xl flex gap-4 justify-between items-start"    
+            >
                 <input 
                     ref={inputRef}
                     type='text'

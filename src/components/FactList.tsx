@@ -12,10 +12,10 @@ export default function FactList({ facts }: FactListProps) {
     
     return (
         <>
-            <ul>
-                { facts.map(fact => {
-                return <FactItem fact={fact} />
-                }) }
+            <ul className="flex flex-col flex-1 gap-4">
+                {facts.map(fact => {
+                    return <FactItem key={fact.id} fact={fact} />
+                })}
             </ul>
         </>
     );
